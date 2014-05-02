@@ -1,11 +1,20 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
 
-<polymer-element name="foot-note" extends="footer">
+<polymer-element name="sub-head">
+<template>
+<style>
+      :host {
+        /* Note: by default elements are always display:inline. */
+        display: block;
+      }
+    </style>
+
+</template>
 	<script>
 		Polymer('foot-note', {
 			ready: function() {
-				this.setAttribute('aria-label', 'Footnote');
-				this.setAttribute('role', 'contentinfo');
+				this.setAttribute('aria-label', 'subheading');
+				this.setAttribute('role', 'group');
 			},
 		});
 	</script>
