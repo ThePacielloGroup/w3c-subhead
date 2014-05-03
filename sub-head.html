@@ -1,0 +1,22 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<polymer-element name="sub-head">
+<template>
+<style>
+ :host {
+  display: block;
+   font-size:60%;
+    }              
+    </style>
+<div><content></content></div>
+</template>
+<script>
+		Polymer('sub-head', {
+			ready: function() {
+				this.setAttribute('aria-label', 'subheading');
+				this.setAttribute('role', 'group');
+			},
+		});
+	</script>
+	
+</polymer-element>
