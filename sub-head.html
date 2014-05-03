@@ -13,8 +13,10 @@
 <script>
 		Polymer('sub-head', {
 			ready: function() {
+				if (parentElement.tagName!="H1") {
 				this.setAttribute('aria-label', 'subheading');
 				this.setAttribute('role', 'group');
+				}
 			},
 		});
 	</script>
