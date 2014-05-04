@@ -3,6 +3,8 @@ sub-head custom element
 
 implementing http://rawgit.com/w3c/subline/master/index.html as a custom element
 
+working demo http://thepaciellogroup.github.io/sub-head/
+
 notes:
 
 In order to work from your hard drive, you need to explicitly allow your browser to access it. The method for doing so is different for each browser.
