@@ -32,10 +32,13 @@ overflow: hidden;
 <script>
 		Polymer('w3c-subhead', {
 			ready: function() {
-				if(this.parentTagName.length!==2 && this.parentTagName[0]!=="H" && parseInt(this.parentTagName[1]) > 0)  {
-				//this.setAttribute('aria-label', 'subheading');
-				this.setAttribute('role', 'group');
+				if(this.parent.tagName.length==2 && this.parent.tagName[0]=="H" && parseInt(this.parent.tagName[1]) > 0)  {
+				//this.setAttribute('aria-label', 'subheading'); do nothing
+				
 				}
+				else 
+				{this.setAttribute('role', 'group');
+					}
 			},
 		});
 	</script>
